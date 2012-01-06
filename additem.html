@@ -40,11 +40,21 @@
         <p></p>
         <label for="mood">On a scale of 1 to 10, calm being 1, energetic being 10, my mood is:</label>
                 <input type="range" min="1" max="10" name="mood" type="range">
-        
-        <!--Boolean element-->
+        <p></p>
+       <!--Boolean Element-->
+        Do you want this track added to the selected playlist?
         <form>
-                <input type="checkbox" name="playlist" value="Yes" /> Add song to selected playlist.<br />
+                <input type="checkbox" name="playlist" value="Yes" /> Add song to playlist.<br />
                 <input type="checkbox" name="playlist" value="No" /> Do not add song to playlist.<br />
+        </form>
+        <p></p>
+        <label for="playliststartdate">Date playlist created:</label>
+                <input type="date" min="2002-01-01" max="2012-01-01"
+                       id="startdate" name="startdate" required aria-required="true"
+                       placeholder="2004-01-01">
+         <p></p>           
+        <form name="input" action="html_form_action.asp" method="get">
+                <input type="submit" value="Submit" />
         </form>
 
 </body>
